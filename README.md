@@ -35,7 +35,7 @@ and more...
 First, git clone this repository or simply download and untar/extract it and
 edit the Makefile variables for your suitable hardware needs.
 
-#### Initialize goinfree env
+#### Initialize goinfree env (run this on the first launch ONLY!)
 ```sh
 make init
 ```
