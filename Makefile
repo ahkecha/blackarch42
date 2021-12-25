@@ -6,7 +6,7 @@
 #    By: ahkecha <ahkecha@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/25 16:48:11 by ahkecha           #+#    #+#              #
-#    Updated: 2021/12/25 17:52:58 by ahkecha          ###   ########.fr        #
+#    Updated: 2021/12/25 18:35:47 by ahkecha          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,7 +39,6 @@ DOCKER_DIR = "../blackarch42"
 DOCKER_FILE = "./"
 
 # change these settings accordingly
-
 TAG = blackarch42
 CONTAINER_NAME = blackarch-42
 DEDICATED_MEMORY = 3096M
@@ -75,7 +74,7 @@ build:
 
 run:
 	@printf "$(CMD3)\n"
-	docker run --rm -it --memory $(DEDICATED_MEMORY) --hostname $(HOSTNAME) --name $(CONTAINER_NAME) $(HOSTNAME)/$(TAG) --service-ports blackarch
+	docker run --rm -it --memory $(DEDICATED_MEMORY) --hostname $(HOSTNAME) --name $(CONTAINER_NAME) $(TAG)/$(HOSTNAME)
 
 
 .PHONY: init build run test
