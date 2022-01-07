@@ -21,7 +21,7 @@ RUN patched_glibc=glibc-linux4-2.33-4-x86_64.pkg.tar.zst && \
    	bsdtar -C / -xvf "$patched_glibc" && \
 	pacman -Syu --noconfirm make && \
     # Install packages
-    pacman -Syu --noconfirm openssh vim tmux screen supervisor iw man mlocate pciutils less bash-completion git wget base-devel python3 python2 nmap binwalk gdb hashcat john metasploit wfuzz ffuf smbclient crackmapexec impacket seclists enum4linux nuclei sqlmap smbmap nikto msfdb hashcat-utils exploitdb radare2
+    pacman -Syu --noconfirm openssh vim tmux screen supervisor iw man mlocate pciutils less bash-completion git wget base-devel python3 python2 nmap binwalk gdb hashcat john metasploit wfuzz ffuf smbclient crackmapexec impacket seclists enum4linux nuclei sqlmap smbmap nikto msfdb hashcat-utils exploitdb radare2 payloadsallthethings cipherscan rsactftool fcrackzip
 
 # Copy BlackArch configs
 RUN cp -r /etc/skel/. /root/. && \
